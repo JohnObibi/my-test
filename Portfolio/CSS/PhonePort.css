@@ -1,0 +1,81 @@
+@media(max-width: 768px){
+    header{
+        background-image: url(../IMAGES/IMG_20220902_010615.jpg);
+        background-size: cover;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .left-content h1{
+        font-size: 35px;
+    }
+    .left-content p{
+        font-size: 22px;
+    }
+
+    .right-container{
+        display: none;
+    }
+    .ABOUT{
+        flex-wrap: wrap;
+    }
+    .about{
+        display: none;
+    }
+    .details{
+        width: 90%;
+        margin: 0 auto;
+        /* text-align: center; */
+        display: block;
+    }
+    .resume{
+        flex-wrap: wrap;
+    }
+    .resume-left{
+        width: 100%;
+    }
+    .resume-right{
+        width: 100%;
+    }
+    .services{
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    .capable{
+        width: 100%;
+        margin-bottom: 30px; 
+    }
+    .contact{
+        flex-wrap: wrap;
+    }
+    .leftcon{
+        width: 100%;
+    }
+    .rightcon{
+        width: 100%;
+    }
+}
+
+/* Mobile View */
+
+@media(max-width: 630px){
+    header{
+        background-image: url(../IMAGES/IMG_20220902_010615.jpg);
+        background-size: cover;
+        background-position: center center;
+
+    }
+    .left-container{
+        width: 100%;
+    }
+    .left-content h1{
+        font-size: 23px;
+    }
+    .left-content p{
+        font-size: 14px;
+    }
+    .right-container{
+        display: none;
+    }
+}

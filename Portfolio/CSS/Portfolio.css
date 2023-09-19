@@ -1,0 +1,404 @@
+body{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    transition: all 0.2s linear 0s;
+}
+img{
+    width: 100%;
+}
+
+nav{
+    z-index: 999;
+    height: 70px;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu-btn{
+    display: none;
+}
+.navlink{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo{
+    /* border: 1px solid blue; */
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 70px;
+    padding: 0 22px;
+}
+
+.navlink-con{
+    padding-right: 40px;
+}
+.navlink-con a{
+    /* border: 2px solid red; */
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 12px;
+    line-height: 70px;
+    padding: 0;
+}
+/* .navlink-con a:hover{
+    line-height: 70px;
+    border-radius: 8px;
+    padding: 0 10px;
+    background-color: #585454;
+/* } work on this later */
+
+header{
+    min-height: calc(100vh - 70px);
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: 70px;
+    
+}
+
+.header-container{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 5%;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.left-container{
+    /* border: 2px solid darkorange; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+}
+
+
+.left-content{
+    /* perspective: ; */
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.left-content:hover{
+    transform: rotateY(15deg);
+    transition: all 2s ease;
+}
+.left-content p{
+   color: whitesmoke; 
+   line-height: 1.6;
+   font-size: 15px;
+}
+
+.right-container{
+    background-image: url(../IMAGES/IMG_20220902_010615.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+.setn{
+    padding-top: 70px;
+}
+.ABOUT{
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 10%;
+    display: flex;
+}
+
+.about{
+    background-image: url(../IMAGES/about\ me.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 45%;
+    height: 500px;
+    /* max-height: 28rem;  */
+    margin-top: 50px;
+    border-radius: 14%;
+    object-fit: fill;
+    /* filter: grayscale(10%); */
+    
+}
+.details{
+    width: 55%;
+    color: white;
+}
+.details h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.details p{
+    text-align: justify;
+}
+.my-resume{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.resume{
+    display: flex;
+    /* border: 2px solid red; */
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    gap: 3%;
+    padding: 15px;
+
+}
+
+.resume-left{
+    width: 50%;
+    padding: 10px;
+    
+}
+.resume-right{
+    width: 50%;
+    padding: 10px
+
+}
+.resume-left h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.resume-right h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content{
+    border-radius: 20px;
+    background-color: #585454;
+    box-shadow: 0 5px 10px rgb(69, 61, 61);
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.content h3{
+    margin-top: 20px;
+    text-align: left;
+    color: aqua;
+}
+.content p{
+    line-height: 1.7;
+    
+}
+.project{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.projects{
+    display: flex;
+}
+.project-img{
+    background-image: url(../IMAGES/Screenshot_20201221_224925_com.ohbibi.fps.jpg);
+    width: 90%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    height: 450px; 
+    margin-top: 50px;
+    border-radius: 12px;
+    filter: grayscale(.6);
+}
+.project-img:hover{
+    filter: none;
+}
+
+.service{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.services{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+.capable{
+    width: 33.333%;
+    background-color: #585454;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 20px;
+}
+.capable h3{
+    text-align: center;
+    color: aqua;
+    margin-bottom: 15px;
+}
+.capable p{
+    margin-bottom: 20px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+.social i{
+    background-color: lightblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    
+}
+.contact h2{
+    color: white;
+}
+.leftcon{
+    width: calc(50% - 40px);
+    padding: 15px;
+}
+.leftcon input{
+    width: 100%;
+    display: block;
+    height: 50px;
+    background-color: #585454;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.leftcon button{
+    margin-top: 20px;
+    background-color: aqua;
+    padding: 10px 12px;
+    color: black;
+    font-weight: 200;
+    border: none;
+    border-radius: 20px;
+    transition: .4s;
+}
+input{
+    caret-color: white;
+    outline: none;
+}
+input::placeholder{
+    letter-spacing: 0.5px;
+    color: grey;
+}
+textarea{
+    outline: none;
+}
+textarea::placeholder{
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#text{
+    height: 200px;
+    width: 100%;
+    resize: none;
+    color: white;
+    padding: 10px;
+    background-color: #585454;
+    border-radius: 12px;
+    border: none;
+}
+.rightcon{
+    width: calc(50% - 10px);
+    padding: 15px;
+}
+.contact h2{
+    text-align: left;
+    padding-bottom: 50px;
+}
+.contact p{
+    color: white;
+    line-height: 1.4;
+}
+.call{
+    padding-bottom: 12px;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+}
+.foot{
+    width: 90%;
+    margin: 0 auto;
+}
+footer p{
+    color: white;
+}
+.socials{
+    margin: 0 40px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.socials i{
+    margin: 0 10px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #585454;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    /* line-height: 1.4; */
+    font-size: 12px;
+}
+.copyright p{
+    padding-bottom: 12px;
+}
+
+::cue{
+    background-color: black;
+    font-size: 30px;
+}
+
+
+
